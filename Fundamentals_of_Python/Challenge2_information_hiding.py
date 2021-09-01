@@ -18,5 +18,9 @@ class Student:
         #pass
     
 
-# pupil1 = Student(Marcus, 22)    
-# print(pupil1.Setname())
+
+demo1 = Student()
+demo1.setName("Alex")
+print("Name:", demo1.getName())
+demo1.setRollNumber(3789)
+print("Roll Number:", demo1.getRollNumber())
