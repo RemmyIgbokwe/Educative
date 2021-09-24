@@ -1,26 +1,20 @@
-class restaurant:
-    
+class Player:
+    teamName = 'Liverpool'  # class variables
+
+    def __init__(self, name):
+        self.name = name  # creating instance variables
+
+    @classmethod
+    def getTeamName(cls):
+        return cls.teamName
+
+    @classmethod
+    def setTeamName(cls, newTeamName):
+        cls.teamName = newTeamName
 
 
-    def __init__(self, order, fees):
-        self.order = order
-        self.fees = fees
+obj1 = Player("Remmy")
+print(obj1.getTeamName())
+obj1.setTeamName("Chelsea")
+print(obj1.getTeamName())
 
-
-    def OrderMade(self):
-        print("2 order of ", self.order)
-
-
-
-    def OrderAmount(self):
-        
-        return self.fees * 2
-        
-        
-
-obj1 = restaurant("Bacon", 3000) 
-obj1.OrderAmount() 
-obj1.OrderMade()   
-print("is worth ", obj1.OrderAmount())
-                
-        #pass
